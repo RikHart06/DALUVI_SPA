@@ -14,8 +14,6 @@
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 	<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
@@ -39,7 +37,7 @@
 <body class="animsition">
 
 	<!-- Header -->
-	<header>
+	<header class="header-v4">
 		<!-- Header desktop -->
 		<div class="container-menu-desktop">
 			<div class="wrap-menu-desktop">
@@ -53,7 +51,7 @@
 					<!-- Menu desktop -->
 					<div class="menu-desktop">
 						<ul class="main-menu">
-							<li class="active-menu">
+							<li>
 								<a href="index.html" class="animsition-link">Inicio</a>
 							</li>
 
@@ -62,7 +60,7 @@
 							</li>
 
 							<li>
-								<a href="us.html" class="animsition-link">Nosotros</a>
+								<a href="us.html" class="active-menu animsition-link">Nosotros</a>
 							</li>
 
 							<li>
@@ -84,8 +82,7 @@
 						<div class="wrap-icon-header flex-w flex-r-m">
 							<a class="icon-header-item hov-cl1 cl2"
 								href="https://api.whatsapp.com/send?l=es_mx&phone=5299999999&text=Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n"
-								target="_blank"
-								title="Enviar mensaje por WhatsApp">
+								target="_blank" title="Enviar mensaje por WhatsApp">
 								<span style="font-family: MuktaMahee-Regular;">999-9999-9999</span>
 								<i class="fa-brands fa-whatsapp"></i>
 							</a>
@@ -151,179 +148,99 @@
 
 	</header>
 
-	<!-- Slider -->
-	<section class="section-slide">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(https://placehold.co/3000x2000.png);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									TEXTO TÍTULO
-								</span>
-							</div>
 
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									SUBTÍTULO
-								</h2>
-							</div>
-
-							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href="product.html"
-									class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									BOTÓN LLAMADA A LA ACCIÓN
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick1" style="background-image: url(https://placehold.co/1500x1000.png);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									TEXTO TÍTULO
-								</span>
-							</div>
-
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									SUBTÍTULO
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick1" style="background-image: url(https://placehold.co/750x500.png);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									TEXTO TÍTULO
-								</span>
-							</div>
-
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									SUBTÍTULO
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!-- Title page -->
+	<section class="bg-img1"
+		style="background-image: url('https://placehold.co/1920x240.png'); padding-top: 10rem; padding-bottom: 7rem;">
+		<h2 class="ltext-105 cl0 txt-center">
+			Nosotros
+		</h2>
 	</section>
 
 
-	<!-- Banner -->
-	<div class="layout-content">
-		<div class="ui-fluid grid mt-4">
-			<div class="col-12 md:col-4">
-				<!-- Block1 -->
-				<div class="block1">
-					<img src="https://placehold.co/600x400.png" class="w-full" alt="IMG-BANNER">
+	<!-- Content page -->
 
-					<a
-						class="block1-txt absolute top-0 left-0 w-full h-full flex-col-l-sb p-3 transition-all transition-duration-300">
-						<div class="block1-txt-child1 flex-col-l">
-							<span class="block1-name ltext-102 transition-all transition-duration-400 pb-2">
-								Imagen de producto / Servicio
-							</span>
+	<section class="layout-content">
+		<div class="ui-fluid grid my-8">
+			<div class="col-12 md:col-6 md:col-offset-1">
+				<h3 class="mtext-111 cl2 pb-3">
+					Título
+				</h3>
 
-							<span class="block1-info stext-102 transition-all transition-duration-400">
-								Subtítulo
-							</span>
-						</div>
+				<p class="stext-113 cl6 pb-2">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula dolor eu leo pulvinar,
+					in aliquet ipsum iaculis. Morbi sed viverra turpis, id commodo justo. Morbi scelerisque luctus quam.
+					unc egestas tempus facilisis. Suspendisse ultrices posuere fringilla. Curabitur lorem lorem,
+					imperdiet vel mollis at,
+					iaculis eget urna. Donec tincidunt nibh eget euismod tempus. Curabitur malesuada ac enim vel
+					tristique.
+					Phasellus eu est eu risus consequat molestie. Vestibulum feugiat facilisis lacus, ac ultrices dolor
+					vehicula a. Praesent feugiat fringilla turpis. Pellentesque at leo non ex maximus eleifend.
+					Sed quis accumsan mi. Integer cursus viverra viverra. Sed a volutpat magna.
+				</p>
 
-						<div class="block1-txt-child2 pb-1 trans-05">
-							<div class="block1-link stext-101 cl0 trans-09">
-								Breve descripción | 225 carácteres máx.
-							</div>
-						</div>
-					</a>
-				</div>
+				<p class="stext-113 cl6 pb-2">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula dolor eu leo pulvinar,
+					in aliquet ipsum iaculis. Morbi sed viverra turpis, id commodo justo. Morbi scelerisque luctus quam.
+					unc egestas tempus facilisis. Suspendisse ultrices posuere fringilla. Curabitur lorem lorem,
+					imperdiet vel mollis at,
+					iaculis eget urna. Donec tincidunt nibh eget euismod tempus. Curabitur malesuada ac enim vel
+					tristique.
+					Phasellus eu est eu risus consequat molestie. Vestibulum feugiat facilisis lacus, ac ultrices dolor
+					vehicula a. Praesent feugiat fringilla turpis. Pellentesque at leo non ex maximus eleifend.
+					Sed quis accumsan mi. Integer cursus viverra viverra. Sed a volutpat magna.
+				</p>
 			</div>
-			<div class="col-12 md:col-4">
-				<!-- Block1 -->
-				<div class="block1">
-					<img src="https://placehold.co/600x400.png" class="w-full" alt="IMG-BANNER">
 
-					<a
-						class="block1-txt absolute top-0 left-0 w-full h-full flex-col-l-sb p-3 transition-all transition-duration-300">
-						<div class="block1-txt-child1 flex-col-l">
-							<span class="block1-name ltext-102 transition-all transition-duration-400 pb-2">
-								Imagen de producto / Servicio
-							</span>
-
-							<span class="block1-info stext-102 transition-all transition-duration-400">
-								Subtítulo
-							</span>
-						</div>
-
-						<div class="block1-txt-child2 pb-1 trans-05">
-							<div class="block1-link stext-101 cl0 trans-09">
-								Breve descripción | 225 carácteres máx.
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="col-12 md:col-4">
-				<!-- Block1 -->
-				<div class="block1">
-					<img src="https://placehold.co/600x400.png" class="w-full" alt="IMG-BANNER">
-
-					<a
-						class="block1-txt absolute top-0 left-0 w-full h-full flex-col-l-sb p-3 transition-all transition-duration-300">
-						<div class="block1-txt-child1 flex-col-l">
-							<span class="block1-name ltext-102 transition-all transition-duration-400 pb-2">
-								Imagen de producto / Servicio
-							</span>
-
-							<span class="block1-info stext-102 transition-all transition-duration-400">
-								Subtítulo
-							</span>
-						</div>
-
-						<div class="block1-txt-child2 pb-1 trans-05">
-							<div class="block1-link stext-101 cl0 trans-09">
-								Breve descripción | 225 carácteres máx.
-							</div>
-						</div>
-					</a>
+			<div class="col-12 md:col-3 mx-auto">
+				<div class="how-bor1">
+					<div class="hov-img0">
+						<img src="https://placehold.co/800x800.png" alt="IMG">
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="ui-fluid grid my-8">
+			<div class="col-12 md:col-3 mx-auto">
+				<div class="how-bor2">
+					<div class="hov-img0">
+						<img src="https://placehold.co/800x800.png" alt="IMG">
+					</div>
+				</div>
+			</div>
+			<div class="col-12 md:col-6">
+				<h3 class="mtext-111 cl2 pb-3">
+					Título
+				</h3>
 
+				<p class="stext-113 cl6 pb-2">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula dolor eu leo pulvinar,
+					in aliquet ipsum iaculis. Morbi sed viverra turpis, id commodo justo. Morbi scelerisque luctus quam.
+					unc egestas tempus facilisis. Suspendisse ultrices posuere fringilla. Curabitur lorem lorem,
+					imperdiet vel mollis at,
+					iaculis eget urna. Donec tincidunt nibh eget euismod tempus. Curabitur malesuada ac enim vel
+					tristique.
+					Phasellus eu est eu risus consequat molestie. Vestibulum feugiat facilisis lacus, ac ultrices dolor
+					vehicula a. Praesent feugiat fringilla turpis. Pellentesque at leo non ex maximus eleifend.
+					Sed quis accumsan mi. Integer cursus viverra viverra. Sed a volutpat magna.
+				</p>
 
-		<div class="ui-fluid grid mt-6">
-			<div class="col-6 md:col-3 flex flex-column align-items-center text-center">
-				<img src="images/icons/facial.svg" class="icon" />
-				<span class="mt-1 font-bold text-3xl">Título</span>
-				<span class="mt-1 font-medium white-space-normal">Descripción</span>
+				<p class="stext-113 cl6 pb-2">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula dolor eu leo pulvinar,
+					in aliquet ipsum iaculis. Morbi sed viverra turpis, id commodo justo. Morbi scelerisque luctus quam.
+					unc egestas tempus facilisis. Suspendisse ultrices posuere fringilla. Curabitur lorem lorem,
+					imperdiet vel mollis at,
+					iaculis eget urna. Donec tincidunt nibh eget euismod tempus. Curabitur malesuada ac enim vel
+					tristique.
+					Phasellus eu est eu risus consequat molestie. Vestibulum feugiat facilisis lacus, ac ultrices dolor
+					vehicula a. Praesent feugiat fringilla turpis. Pellentesque at leo non ex maximus eleifend.
+					Sed quis accumsan mi. Integer cursus viverra viverra. Sed a volutpat magna.
+				</p>
 			</div>
-			<div class="col-6 md:col-3 flex flex-column align-items-center text-center">
-				<img src="images/icons/masaje.svg" class="icon" />
-				<span class="mt-1 font-bold text-3xl">Título</span>
-				<span class="mt-1 font-medium white-space-normal">Descripción</span>
-			</div>
-			<div class="col-6 md:col-3 flex flex-column align-items-center text-center">
-				<img src="images/icons/spa.svg" class="icon" />
-				<span class="mt-1 font-bold text-3xl">Título</span>
-				<span class="mt-1 font-medium white-space-normal">Descripción</span>
-			</div>
-			<div class="col-6 md:col-3 flex flex-column align-items-center text-center">
-				<img src="images/icons/velas.svg" class="icon" />
-				<span class="mt-1 font-bold text-3xl">Título</span>
-				<span class="mt-1 font-medium white-space-normal">Descripción</span>
-			</div>
+			
+			<div class="md:col-1"></div>
 		</div>
-	</div>
+	</section>
 
 	<!-- Footer -->
 	<footer class="bg3 pt-4">
