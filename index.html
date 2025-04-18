@@ -34,6 +34,13 @@
 
 <body class="animsition">
 
+	<!-- Video Inicial -->
+	<div id="video-overlay" class="hidden">
+		<video id="intro-video" autoplay muted>
+			<source src="videos/init.mp4" type="video/mp4">
+			Tu navegador no soporta videos.
+		</video>
+	</div>
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
@@ -378,6 +385,31 @@
 	<script src="js/slick-custom.js"></script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<!--===============================================================================================-->
+	<script>
+		const overlay = document.getElementById("video-overlay");
+		const video = document.getElementById("intro-video");
+		const now = new Date();
+		const lastShown = localStorage.getItem("lastVideoShown");
+
+		// Mostrar si ha pasado más de 1 día o nunca se mostró
+		if (!lastShown || (now - new Date(lastShown)) > 1 * 24 * 60 * 60 * 1000) {
+			overlay.classList.remove("hidden");
+			video.play();
+
+			// Guardar nueva fecha
+			localStorage.setItem("lastVideoShown", now.toISOString());
+
+			// Ocultar overlay al terminar el video
+			video.onended = () => {
+				overlay.classList.add("fade-out");
+				setTimeout(() => {
+					overlay.classList.add("hidden");
+					overlay.classList.remove("fade-out");
+				}, 1000); // duración del fade en milisegundos
+			};
+		}
+	</script>
 
 </body>
 
