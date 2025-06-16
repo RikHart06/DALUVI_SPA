@@ -28,6 +28,7 @@
 	<!--========================================= CDN's================================================-->
 	<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!--===============================================================================================-->
 </head>
@@ -157,52 +158,28 @@
 
 	<!-- Slider -->
 	<section class="section-slide">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(images/baners/spa1.jpg);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									TEXTO TÍTULO
-								</span>
-							</div>
+		<div class="video-background-container" style="position: relative; height: 90vh; overflow: hidden;">
+			<video autoplay muted loop playsinline
+				style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); object-fit: cover;">
+				<source src="videos/home2.mp4" type="video/mp4">
+				Tu navegador no soporta la reproducción de video.
+			</video>
 
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									SUBTÍTULO
-								</h2>
-							</div>
-
-							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href="product.html"
-									class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									BOTÓN LLAMADA A LA ACCIÓN
-								</a>
-							</div>
-						</div>
-					</div>
+			<div class="container h-full d-flex align-items-center justify-content-start text-left"
+				style="position: relative; z-index: 1;">
+				<div class="text-white ps-5">
+					<h1 class="ltext-101 mb-4" data-aos="fade-up" data-aos-delay="2000" data-aos-easing="linear" data-aos-duration="500">DALUVI SPA</h1>
+					<h2 class="ltext-201 mb-5" data-aos="fade-up" data-aos-delay="3000" data-aos-easing="linear" data-aos-duration="500">DÓNDE FLORECE EL ALMA</h2>
+					<!-- <a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+						BOTÓN LLAMADA A LA ACCIÓN
+					</a> -->
 				</div>
-
-				<div class="item-slick1" style="background-image: url(images/baners/spa2.jpg);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									TEXTO TÍTULO
-								</span>
-							</div>
-
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									SUBTÍTULO
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
+
+			<!-- Overlay opcional oscuro -->
+			<!-- <div
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); z-index: 0;">
+			</div> -->
 		</div>
 	</section>
 
@@ -213,7 +190,8 @@
 			<div class="col-12 md:col-4">
 				<!-- Block1 -->
 				<div class="block1">
-					<img src="images/masajes/horizontales/pexels-john-tekeridis-21837-3212179.jpg" class="w-full" alt="IMG-BANNER">
+					<img src="images/masajes/horizontales/pexels-john-tekeridis-21837-3212179.jpg" class="w-full"
+						alt="IMG-BANNER">
 
 					<a
 						class="block1-txt absolute top-0 left-0 w-full h-full flex-col-l-sb p-3 transition-all transition-duration-300">
@@ -356,7 +334,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
 		<i class="fa-solid fa-chevron-up text-white font-bold text-3xl"></i>
@@ -370,6 +348,7 @@
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--===============================================================================================-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="vendor/slick/slick.min.js"></script>
 	<script src="js/slick-custom.js"></script>
 	<!--===============================================================================================-->
@@ -380,6 +359,8 @@
 		const video = document.getElementById("intro-video");
 		const now = new Date();
 		const lastShown = localStorage.getItem("lastVideoShown");
+
+		AOS.init();
 
 		// Mostrar si ha pasado más de 1 día o nunca se mostró
 		if (!lastShown || (now - new Date(lastShown)) > 1 * 24 * 60 * 60 * 1000) {
